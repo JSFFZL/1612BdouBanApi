@@ -21,7 +21,6 @@ gulp.task('webserver',function(){
     .pipe(webserver({
         open:true,
         port:8086,
-        livereload:true,
 		proxies:[
 			{source:"/juno/weapp/v2/search/prefix_keyword_suggester.json",target:"https://www.xiachufang.com/juno/weapp/v2/search/prefix_keyword_suggester.json"}
 		]
